@@ -8,7 +8,7 @@ function getRandomScenarios(category, count) {
 }
 
 function fetchAndRender() {
-  fetch('../json/all_scenarios.json')
+  fetch('json/all_scenarios.json')
     .then(response => response.json())
     .then(data => {
       const categories = ["static", "tracking", "target-switching"];
